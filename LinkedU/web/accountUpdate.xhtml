@@ -10,7 +10,7 @@ and open the template in the editor.
     <head>
         <title>Account</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
+
     </head>
     <body>
         <h1><p:outputLabel id="first" value="#{LoginBean.firstName}">'s Account</p:outputLabel></h1>
@@ -20,9 +20,14 @@ and open the template in the editor.
         Email Address: <p:outputLabel id="email" value="#{LoginBean.email}"></p:outputLabel><br></br>
         Username: <p:outputLabel id="username" value="#{LoginBean.username}"></p:outputLabel><br></br>
         High School <p:outputLabel id="highSchool" value="#{LoginBean.highSchool}"></p:outputLabel><br></br>
-        <h3>Want to get noticed? Complete your profile to get more attention.</h3><br></br>
-        <p:commandButton id="updateAccount" value="Update" action="accountUpdate.xhtml"></p:commandButton>
-        
+        <h3>Complete as many fields as you can. The more information you provide, the more you'll stand out to colleges</h3><br></br>
+        First Name: <p:inputText id="firstName" value="#{LoginBean.firstName}" required="true"></p:inputText>
+        Last  Name: <p:inputText id="lastName" value="#{LoginBean.lastName}"></p:inputText>
+        Email Address: <p:inputText id="email" value="#{LoginBean.email}"></p:inputText>
+        Username: <p:inputText id="username" value="#{LoginBean.username}"></p:inputText>
+        High School <p:inputText id="highSchool" value="#{LoginBean.highSchool}"></p:inputText>
+
+
 
     </body>
 </html>
